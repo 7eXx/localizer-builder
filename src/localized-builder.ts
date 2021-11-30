@@ -7,8 +7,6 @@ interface Options extends JsonObject {
     destination: string;
 }
 
-export default createBuilder(copyFileBuilder);
-
 async function copyFileBuilder(
     options: Options,
     context: BuilderContext,
@@ -27,3 +25,5 @@ async function copyFileBuilder(
     context.reportStatus('Done.');
     return { success: true };
 }
+
+export default createBuilder(copyFileBuilder);

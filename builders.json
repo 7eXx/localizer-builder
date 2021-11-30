@@ -1,9 +1,9 @@
 {
     "builders": {
-        "copy": {
+        "create-locale": {
             "implementation": "./dist/localized-builders.js",
             "schema": "./src/schema.json",
-            "description": "Copies a file."
+            "description": "Create locale config languages file"
         }
     }
 }

@@ -20,6 +20,7 @@
         "typescript": "^4.5.2"
     },
     "scripts": {
+        "start": "tsc && node dist/localized-builder.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "mark texx",
