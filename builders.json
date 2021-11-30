@@ -1,0 +1,10 @@
+{
+    "builders": {
+        "copy": {
+            "implementation": "./dist/localized-builders.js",
+            "schema": "./src/schema.json",
+            "description": "Copies a file."
+        }
+    }
+}
+
