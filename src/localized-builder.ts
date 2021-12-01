@@ -7,7 +7,7 @@ interface Options extends JsonObject {
     destination: string;
 }
 
-async function copyFileBuilder(
+async function createLanguagesFile(
     options: Options,
     context: BuilderContext,
 ): Promise<BuilderOutput> {
@@ -26,4 +26,4 @@ async function copyFileBuilder(
     return { success: true };
 }
 
-export default createBuilder(copyFileBuilder);
+export default createBuilder(createLanguagesFile);
